@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Senac\\Projeto\\": "src/"
+    }
+  },
+  "require": {
+    "phpmailer/phpmailer": "^6.8"
+  }
+}

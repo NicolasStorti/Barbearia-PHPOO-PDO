@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --bg1: #1f1f1f;
+    --bg2: #373737;
+    --body: #c5c5c5;
+    --color1: #38ac29;
+    --white: #fff;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #fff;
+    font-weight: bolder;
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: var(--color1);
+}
+
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+#h1{
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+/* INTRO */
+
+#servicos .intro,
+#ajuda .intro,
+#equipe .intro,
+#clientes .intro{
+    margin-bottom: 60px;
+}
+
+#servicos .intro h1,
+#ajuda .intro h1,
+#equipe .intro h1,
+#clientes .intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+#servicos .intro h6,
+#ajuda .intro h6,
+#equipe .intro h6,
+#clientes .intro h6{
+    color: var(--color1);
+}
+#servicos .intro p,
+#ajuda .intro p,
+#equipe .intro p,
+#clientes .intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+#servicos .cta-btns,
+#ajuda .cta-btns,
+#equipe .cta-btns,
+#clientes .cta-btns{
+    margin-top: 60px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: #0a0a0a;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--color1);
+}
+.navbar-brand{
+    font-size: 1.8em;
+}
+
+/* HOME */
+
+#home{
+    background: linear-gradient(to right, #444444, rgba(53, 50, 50, 0)), url(/img/home.jpg);
+    min-height: 100vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+/* BTN */
+
+.btn{
+    padding: 16px 35px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0px;
+}
+
+.btn-brand{
+    background-color: var(--color1);
+    color: var(--white);
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--color1) ;
+}
+
+
+
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--color1) ;
+}
+.btn-outline-brand:hover{
+    background-color: var(--color1);
+    color: var(--white);
+}
+
+/* SOBRE */
+
+#sobre{
+    position: relative;
+}
+#sobre::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--color1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#sobre h6{
+    color: var(--color1);
+}
+
+#sobre h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+
+
+/* SERVIÇOS */
+
+#servicos{
+    background: var(--bg2);
+}
+
+#servicos .servico .content{
+    padding: 32px;
+}
+
+#servicos .servico p{
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+
+#servicos .link-saiba{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+#servicos .link-saiba .icon{
+    transition: all 0.4s ease;
+    margin-left: 4px;
+}
+
+#servicos .link-saiba:hover .icon{
+    transform: translateX(8px);
+}
+
+/* CONTADOR */
+
+#contador{
+    background: linear-gradient(to right, #444444, #35323200), url(../img/back2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contador h1{
+    color: var(--color1);
+}
+
+/* AJUDA */
+#ajuda{
+    background-color: var(--bg1);
+}
+#ajuda .ajuda{
+    display: flex;
+}
+#ajuda .ajuda .icon-ajuda{
+    font-size: 25px;
+    color: var(--color1);
+    line-height: 0;
+    margin-right: 12px;
+}
+#ajuda .ajuda p{
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+#ajuda .link-saiba{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+#ajuda .link-saiba .icon{
+    transition: all 0.4s ease;
+    margin-left: 4px;
+}
+
+#ajuda .link-saiba:hover .icon{
+    transform: translateX(8px);
+}
+
+
+/* SOCIAL LINKS */
+
+#equipe .social-icons a,
+#footers .social-icons a{
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-bottom: 2.5px;
+}
+#equipe .social-icons a:hover
+#footers .social-icons a:hover{
+    background-color: var(--color1);
+    color: var(--bg2);
+}
+
+
+
+/* EQUIPE */
+#equipe{
+    background-color: var(--bg2);
+}
+#equipe .equipes{
+    position: relative;
+}
+
+#equipe .equipes .social-icons{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+#equipe .equipes:hover .social-icons{
+    opacity: 1;
+    top: 30px;
+}
+
+
+/* CLIENTES */
+
+#clientes{
+    background-color: var(--bg1);
+}
+
+#clientes .cliente{
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+}
+#clientes .cliente .icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+    color: #0a0a0a;
+    border-radius: 100px;
+    position: absolute;
+    right: 32px;
+}
+#clientes .cliente .icon a{
+    color: #0a0a0a;
+}
+#clientes .cliente .icon a:hover{
+    color: var(--bg2);
+}
+#clientes .cliente #img-cliente{
+    width: 90px;
+    border-radius: 50%;
+}
+
+/* CONTATO */
+
+#contato{
+    background: linear-gradient(to right, #444444, rgba(53, 50, 50, 0)), url(../img/back2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#contato form{
+    background-color: var(--bg1);
+    padding: 32px;
+}
+
+#contato form .form-control{
+    border-radius: 0;
+    margin-top: 16px;
+    border-color: var(--bg2);
+    border: 2px solid var(--bg2);
+    color: var(--body);
+}
+
+#contato form input{
+    height: 50px;
+}
+
+#contato form .form-control:focus{
+    box-shadow: none;
+    border-left-color: var(--color1);
+}
+
+/* FOOTER */
+
+#footers{
+    padding-top: 160px;
+}
+
+#footers .social-icons{
+    display: flex;
+
+}
+#footers .social-icons a{
+    margin-right: 5px;
+    font-size: 16px;
+}
+#footers .footer-top{
+    padding-bottom: 30px;
+}
+#footers .footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--bg2);
+}
+
+@media screen and (max-width: 991px){
+    #footers .footer-top{
+        padding-bottom: 60px;
+    }
+    #footers .footer-bottom{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #contato{
+        background: none;
+        background-color: var(--bg2);
+    }
+    #icone-whats img{
+        width: 70px;
+    }
+}
+
+#icone-whats img{
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#agradecimento{
+    background: linear-gradient(to right, #444444, rgba(53, 50, 50, 0)), url(../img/bg-agradecimento.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sessao-sistema{
+    background-color: var(--bg2);
+}
+
+#sessao-sistema .row{
+    background-color: var(--bg1);
+    padding: 70px;
+}
+
+#sessao-sistema form .form-control{
+    background-color: var(--bg2);
+    border-radius: 0;
+    border-color: var(--bg2);
+    border: 2px solid var(--bg2);
+    color: var(--body)
+}
+#sessao-sistema form .form-control:focus{
+    box-shadow: none;
+    border-left-color: var(--color1);
+}
+
+#sessao-sistema form select{
+     background-color: var(--bg2);
+     border-radius: 0;
+     border-color: var(--bg2);
+     border: 2px solid var(--bg2);
+     color: var(--body)
+}
+#sessao-sistema form select:focus{
+    box-shadow: none;
+    border-left-color: var(--color1);
+}
+
+#sessao-sistema .btn-login a{
+    margin: 15px;
+}
+
+#sessao-sistema .btn-table{
+    padding: 10px 20px;
+}
