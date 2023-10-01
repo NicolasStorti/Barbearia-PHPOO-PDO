@@ -343,7 +343,8 @@ section{
     margin-top: 16px;
     border-color: var(--bg2);
     border: 2px solid var(--bg2);
-    color: var(--body);
+    background-color: var(--body);
+    color: var(--bg1);
 }
 
 #contato form input{
